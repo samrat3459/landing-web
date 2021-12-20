@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========== navbar ================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav {
+    padding-right: 30px;
+}
+
+.navbar-nav li a:hover {
+    color: rgb(9, 82, 192) !important;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    margin: auto;
+    background-color: crimson;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+/* ===================== slider ======================= */
+
+#slider {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+.carousel-caption h5 {
+    color: crimson;
+    font-size: 40px;
+}
+
+/* =================== about ================ */
+
+#about {
+    padding: 50px 0;
+    color: #555;
+}
+
+#about .btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    border-radius: 16px;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+
+/* ============= services ================= */
+
+#services {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/services.jpg') center / cover fixed;
+    color: white !important;
+    padding: 50px 0;
+}
+
+#services h1 {
+    text-align: center;
+    color: white;
+}
+
+#services h1::after {
+    content: '';
+    background: white;
+    height: 3px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.services {
+    margin-top: 40px;
+}
+
+.icon {
+    font-size: 35px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#services .col-md-3:hover {
+    background-color: rgb(9, 99, 209);
+    cursor: pointer;
+    transition: .7s;
+}
+
+/* ============ team member =============== */
+
+#team {
+    padding: 50px 0;
+    color: #555;
+}
+
+#team h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+#team h1::after {
+    content: '';
+    background: rgb(9, 99, 209);
+    height: 3px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.profile-pic {
+    margin-top: 25px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img {
+    filter: grayscale(1);
+}
+
+.profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.profile-pic h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#team .fab {
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.img-box img {
+    width: 220px;
+    height: auto;
+}
+
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box ul:hover {
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+    transition: 0.7s;
+}
+
+/* ============== promo ============== */
+
+#promo {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/promo.jpg') no-repeat center / cover fixed;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* ================ price ============= */
+
+#price {
+    padding: 40px 0;
+    background-color: #bdd6f1;
+}
+
+#price h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+#price h1::after {
+    content: '';
+    background: rgb(8, 100, 212);
+    height: 3px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.single-price {
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.price-head {
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-head h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.price-head p {
+    font-size: 20px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+.price-head span{
+    font-size: 15px;
+}
+.price-content{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.price-content ul li{
+     border-bottom: 1px solid #efefef;
+     padding: 15px 10px;
+     list-style: none;
+}
+ul li:nth-child(5){
+    border: none;
+}
+.fa-check-circle{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-times-circle{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.price-btn{
+    display: inline;
+    float: left;
+    padding: 15px 5px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn{
+    background-color: #2196f3;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+.buy-btn:hover{
+    border-color: 1px solid white;
+    background-color: #3f51b5;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ================ testimonials =================== */
+
+#testimonials{
+    padding: 50px 0;
+}
+#testimonials h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+#testimonials h1::after {
+    content: '';
+    background: rgb(8, 100, 212);
+    height: 3px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+#testimonials .row{
+    margin-top: 30px;
+}
+.col-md-4{
+    margin: 40px auto;
+    position: relative;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img{
+    position: absolute;
+    top: -60px;
+    transform: translateX(-50%);
+    border: 10px solid #fff;
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonials span{
+    font-size: 15px;
+    color: #333;
+}
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote::before{
+    content: open-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+
+blockquote::after{
+    content: close-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 15px;
+    bottom: -15px;
+    left: 5px;
+}
+
+.profile:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* =============== get in touch ==================== */
+
+#contact{
+    background: #efefef;
+    padding: 40px 0;
+    color: #777;
+}
+#contact h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+#contact h1::after {
+    content: '';
+    background: rgb(8, 100, 212);
+    height: 3px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+.contact-form{
+    padding: 20px;
+}
+.form-control{
+    border-radius: 5px;
+    border: none !important;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+textarea{
+    resize: none;
+}
+::placeholder{
+    color: #999 !important;
+}
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.contact-info .fas{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+.contact-info .fab{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
